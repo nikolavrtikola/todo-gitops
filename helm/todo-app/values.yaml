@@ -4,7 +4,7 @@ imagePullSecrets:
 frontend:
   image:
     repository: ghcr.io/nikolavrtikola/nikola-todo-frontend
-    tag: "latest"
+    tag: "6ff8eae0ba374def507d16a1a2d52d60e4dfb3c9"
 
   replicas: 1
 
@@ -17,7 +17,7 @@ frontend:
 backend:
   image:
     repository: ghcr.io/nikolavrtikola/nikola-todo-backend
-    tag: "latest"
+    tag: "6ff8eae0ba374def507d16a1a2d52d60e4dfb3c9"
 
   replicas: 1
 
