@@ -1,0 +1,35 @@
+frontend:
+  image:
+    repository: ghcr.io/nikolavrtikola/nikola-todo-frontend
+    tag: "latest"
+
+  replicas: 1
+
+  service:
+    type: NodePort
+    port: 80
+    nodePort: 30080
+
+
+backend:
+  image:
+    repository: ghcr.io/nikolavrtikola/nikola-todo-backend
+    tag: "latest"
+
+  replicas: 1
+
+  service:
+    port: 3000
+
+
+postgres:
+  image:
+    repository: postgres
+    tag: "16"
+
+  database: todos
+  username: todo
+  password: todo-password
+
+  storage:
+    size: 1Gi
