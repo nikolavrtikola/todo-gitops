@@ -1,3 +1,6 @@
+imagePullSecrets:
+  - name: ghcr-secret
+
 frontend:
   image:
     repository: ghcr.io/nikolavrtikola/nikola-todo-frontend
@@ -33,3 +36,4 @@ postgres:
 
   storage:
     size: 1Gi
+
