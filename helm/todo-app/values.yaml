@@ -30,9 +30,9 @@ postgres:
     repository: postgres
     tag: "16"
 
-  database: todos
-  username: todo
-  password: todo-password
+  # database: todos
+  # username: todo
+  # password: todo-password
 
   storage:
     size: 1Gi
