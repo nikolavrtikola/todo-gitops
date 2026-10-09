@@ -6,7 +6,7 @@ frontend:
     repository: ghcr.io/nikolavrtikola/nikola-todo-frontend
     tag: "08bb2875c08861fc8423c83f6acd2cf953bd5241"
 
-  replicas: 1
+  replicas: 2
 
   service:
     type: NodePort
@@ -19,7 +19,7 @@ backend:
     repository: ghcr.io/nikolavrtikola/nikola-todo-backend
     tag: "08bb2875c08861fc8423c83f6acd2cf953bd5241"
 
-  replicas: 1
+  replicas: 2
 
   service:
     port: 3000
